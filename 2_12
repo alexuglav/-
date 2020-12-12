@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int N,a,min,max;
+	cin >> N;
+	max = 0;
+	cin >> min;
+	for (int i = 2; i <= N; i++) {
+		cin >> a;
+		if (a < min) {
+			min = a;
+		}
+		if (a > max) {
+			max = a;
+		}
+	}
+	cout << min + max;
+	return 0;
+}
