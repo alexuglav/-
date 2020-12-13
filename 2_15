@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int N;
+	cin >> N;
+	int Z;
+	cin >> Z;
+	bool a = false;
+	while (N != 0) {
+		if (N % 10 == Z) {
+			a = true;
+		}
+		N = N / 10;
+	}
+	if (a == true) {
+		cout << 'входит';
+	}
+	if (a == false) {
+		cout << 'не входит';
+	}
+	return 0;
+}
