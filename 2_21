@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int a, b;
+	bool c = true;
+	cin >> a;
+	cin >> b;
+	while (b != 0) {
+		if (a < b) {
+			a = b;
+		}
+		else {
+			c = false;
+		}
+		cin >> b;
+	}
+	if (c == true) {
+		cout << "возрастает";
+	}
+	else {
+		cout << "не возрастает";
+	}
+	return 0;
+}
